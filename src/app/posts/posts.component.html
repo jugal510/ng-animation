@@ -1,0 +1,11 @@
+<h1>Post Detail</h1>
+<ul [@listStagger]="post$">
+  <li *ngFor="let posts of post$">
+    <ul>
+      <li><strong>User Id: </strong>{{ posts.userId }}</li>
+      <li><strong>Id: </strong>{{ posts.id }}</li>
+      <li><strong>Title: </strong>{{ posts.title }}</li>
+      <li><strong>Content: </strong>{{ posts.body }}</li>
+    </ul>
+  </li>
+</ul>
